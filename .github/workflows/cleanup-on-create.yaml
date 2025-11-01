@@ -29,8 +29,6 @@ jobs:
             .renovaterc.json \
             CHANGELOG.md
 
-<<<<<<< HEAD
-=======
       - name: Remove Form Development Files
         run: |
           rm -rf \
@@ -45,14 +43,11 @@ jobs:
         run: |
           rm -rf package.json package-lock.json  
 
->>>>>>> 5841351 (Initial commit)
       - name: Initialize README
         # replace {repo} and {owner} with the actual values
         run: |
           sed -i.bak "s/{repo}/$(basename ${{ github.repository }})/g" README.md
           sed -i.bak "s/{owner}/$(dirname ${{ github.repository }})/g" README.md
-<<<<<<< HEAD
-=======
 
       - name: Create fstab.yaml for hlx4 projects
         run: |
@@ -66,16 +61,11 @@ jobs:
           sed -i.bak "s/{repo}/$(basename ${{ github.repository }})/g" fstab.yaml
           sed -i.bak "s/{owner}/$(dirname ${{ github.repository }})/g" fstab.yaml
 
->>>>>>> 5841351 (Initial commit)
       - name: Initialize Pull Request Template
         run: |
           sed -i.bak "s/{repo}/$(basename ${{ github.repository }})/g" .github/pull_request_template.md
           sed -i.bak "s/{owner}/$(dirname ${{ github.repository }})/g" .github/pull_request_template.md
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 5841351 (Initial commit)
         # commit back to the repository
       - name: Commit changes
         run: |
