@@ -1,5 +1,6 @@
 mountpoints:
 <<<<<<< HEAD
+<<<<<<< HEAD
   /:
     url: "https://author-p130360-e1272151.adobeaemcloud.com/bin/franklin.delivery/adobe-rnd/aem-boilerplate-xwalk/main"
     type: "markup"
@@ -7,3 +8,6 @@ mountpoints:
 =======
   /: https://adobe.sharepoint.com/sites/AFB/Shared%20Documents/afb/website/drafts/rae/tests
 >>>>>>> 8e4df79 (add fstab.yaml)
+=======
+  /: https://adobe.sharepoint.com/sites/AFB/Shared%20Documents/afb/website
+>>>>>>> 868467b (Update SharePoint mountpoint URL in fstab.yaml)
